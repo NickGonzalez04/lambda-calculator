@@ -1,0 +1,28 @@
+.logo-container{
+    background-color:red;
+}
+.App{
+    display:flex;
+    justify-content: center;
+}
+.number-button{
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+}
+.operator-Button{
+background-color: blue;
+color: white;
+border:none;
+border-radius: 20px;
+
+}
+.display{
+    background-color: black;
+    color: white;
+    text-align: right;
+    border-radius: 10px;
+    height: 20px;
+}
