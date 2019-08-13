@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 
 
@@ -11,6 +11,8 @@ import Display from "./components/DisplayComponents/Display.js";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers.js";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators.js";
 import Specials from "./components/ButtonComponents/SpecialButtons/Specials.js";
+
+
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
   // Once the state hooks are in place write some functions to hold data in state and update that data depending on what it needs to be doing
@@ -18,18 +20,34 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
+
+// Function operators 
+const [displayValue, setDisplayValue] = useState("0");
+const addNumber = (number) => {
+  setDisplayValue(displayValue => displayValue + number);
+};
+const addOperator = (operator) => {
+  if (operator === "="){
+  setDisplayValue(displayValue => eval(displayValue));
+} else {
+  setDisplayValue(displayValue => displayValue + " " + operator + " ");
+}
+
+}
   return (
     <div className="container">
       <Logo />
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-     <Display number={1000} />
-     <Numbers />
-     <Operators />
+     <Display number={displayValue} />
+     <Numbers addNumber={addNumber} />
+     <Operators addOperator={addOperator}/>
      <Specials />
       </div>
     </div>
   );
 }
+
+
 
 export default App;
