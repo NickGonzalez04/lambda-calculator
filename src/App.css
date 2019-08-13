@@ -1,28 +1,53 @@
-.logo-container{
-    background-color:red;
+img{
+    width: 60px;
+    align-items: center;
+    padding: 10px;
+}
+
+.container{
+    background-color:#B81523;
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
 }
 .App{
-    display:flex;
-    justify-content: center;
+    /* justify-content: space-between; */
+    padding:0 8px 8px 8px;
+}
+
+
+.display{
+    background-color: #2D2827;
+    padding:5px;
+    color: white;
+    text-align: right;
+    border-radius: 8px;
+    height: 20px;
+}
+
+.special-button{
+    background-color:#235FA9;
+    color: white;
+border:none;
+border-radius: 20px;
+font-size: 15px;
+height: 25px;
+
+
 }
 .number-button{
-    background-color: blue;
+    background-color: #163775;
     color: white;
     border-radius: 20px;
     border: none;
     font-size: 20px;
+    margin: 8px;
 }
 .operator-Button{
-background-color: blue;
+background-color:#3eB4E3;
 color: white;
 border:none;
 border-radius: 20px;
+font-size: 20px;
 
-}
-.display{
-    background-color: black;
-    color: white;
-    text-align: right;
-    border-radius: 10px;
-    height: 20px;
 }
