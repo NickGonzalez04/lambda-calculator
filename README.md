@@ -53,13 +53,13 @@ Follow these steps for completing your project.
 Using the design file, build out your User Interface. Before you start, look through the app structure to see what components you have to work with, then you'll start by following the steps below.
 
 **STEP 1**
-[ ]
+[X]
 - You have been given a Data.js file that contains some arrays.
 - Find a way to bring (import) the data into the necessary files, but do not change the data.
 - Data should be imported into the wrapper components (`Numbers`, `Operators`, and `Specials`)
 
 **Step 2**
-[ ]
+[X]
 Add the data to state like this:
 
 ```js
@@ -72,7 +72,7 @@ const [numberState, setNumberState] = useState(numbers);
 ```
 
 **Step 3**
-[ ]
+[  ]
 - Map over the data and dynamically render components for each piece of data in the arrays.
 - You will need to import the component that you'll render in the map function.
 
